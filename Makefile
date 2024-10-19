@@ -1,2 +1,2 @@
 all:
-	gcc main.c -o wsk
+	gcc httpd.c -o wsk
