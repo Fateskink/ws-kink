@@ -21,6 +21,13 @@ int main(int argc, char *argv[]) {
     return -1;
   }
 
+  int a = 10;
+  int *pta = &a;
+  printf(
+    "%p | %d | %p | %d | %p \n\n",
+    pta, *pta, &pta, a, &a
+  );
+
   printf("Listening on %s:%s\n", LISTENADDR, port);
   while(1) {
     c = cli_accept(s);
